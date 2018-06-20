@@ -2,7 +2,7 @@
 
 import RPi.GPIO as GPIO
 from sparkpost import SparkPost
-from twilio.rest import twilioClient
+from twilio.rest import Client
 import time
 import os
 
@@ -11,7 +11,7 @@ sparkpostKey = os.environ.get('SPKEY')
 twilioKey = os.environ.get('TWILIOKEY')
 twilioAccount = os.environ.get('TWILIOACCT')
 sparky = SparkPost(sparkpostKey)
-twilio = twilioClient(twilioAccount, twilioKey)
+twilio = Client(twilioAccount, twilioKey)
 
 
 # Yay, you don't have water anymore
