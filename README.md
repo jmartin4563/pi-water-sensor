@@ -13,6 +13,5 @@ export TWILIOACCT='your twilio account sid here'
 
 # Running
 ```
-chmod +x detect.py
 ./detect.py
 ```
