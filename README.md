@@ -1,7 +1,7 @@
 # Installation
 ```
 pip install sparkpost
-pip install twilio
+sudo pip install twilio (not sure why it needs sudo, but it does /shrug)
 ```
 
 # Configuration
